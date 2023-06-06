@@ -8,14 +8,18 @@
     <title>Bootstrap5 alpinejs3 project-1</title>
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <script defer src="./js/alpinejs3.12.1.min.js"></script>
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<header x-data="{ navShow: false }" @scroll.window="navShow = window.scrollY > 100 ? true : false">
+    <nav class="navbar navbar-expand-lg fixed-top header" :class="{ 'header-scrolled' : navShow}">
         <div class="container">
             <a class="navbar-brand" href="#">HosseinAbdollahzadeh</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -24,13 +28,16 @@
                         <a class="nav-link active" aria-current="page" href="#">صفحه ی اصلی</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
                             محصولات
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">لورم ایپسوم</a></li>
                             <li><a class="dropdown-item" href="#">لورم ایپسوم متن</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="#">لورم ایپسوم متن ساختگی</a></li>
                         </ul>
                     </li>
@@ -45,6 +52,8 @@
         </div>
     </nav>
 </header>
+
+<section style="background: aqua; height: 1500px;"></section>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

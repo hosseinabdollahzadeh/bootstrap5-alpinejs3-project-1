@@ -7,6 +7,17 @@
         /* Pretty Modern Browsers */ url("../fonts/Vazir.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-body{
+body {
     font-family: "Vazir" !important;
+}
+
+/*Header*/
+.header {
+    transition: all 0.5s;
+    padding: 20px 0;
+}
+
+.header-scrolled {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
 }
