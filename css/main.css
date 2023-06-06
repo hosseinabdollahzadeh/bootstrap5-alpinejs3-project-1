@@ -76,3 +76,9 @@ body {
 .counters i.red {
     color: #bb0852;
 }
+
+/*Features*/
+.features i {
+    font-size: 44px;
+    color: #4154f1;
+}
