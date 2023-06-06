@@ -193,3 +193,28 @@ a {
 .services .service-box:hover .icon {
     background-color: #ffffff;
 }
+
+/*Pricing*/
+.plan-color-0 {
+    color: #07d5c0;
+}
+
+.plan-color-1 {
+    color: #65c600;
+}
+
+.plan-color-2 {
+    color: #ff901c;
+}
+
+.plan-color-3 {
+    color: #ff0071;
+}
+
+.pricing .card {
+    transition: all 0.3s;
+}
+
+.pricing .card:hover {
+    transform: scale(1.1);
+}
