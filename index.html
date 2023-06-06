@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap5 alpinejs3 project-1</title>
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <script defer src="./js/alpinejs3.12.1.min.js"></script>
@@ -71,7 +72,7 @@
 </section>
 
 <!--About-->
-<section class="my-5">
+<section class="py-5">
     <div class="container">
         <div class="row gx-0 gy-5 align-items-center">
             <div class="col-lg-6">
@@ -92,7 +93,7 @@
 </section>
 
 <!--Values-->
-<section class="my-5">
+<section class="py-5">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 text-center">
@@ -138,6 +139,61 @@
     </div>
 </section>
 
+<!--Counters-->
+<section class="counters py-5">
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center shadow p-3">
+                    <i class="bi bi-emoji-smile blue me-3"></i>
+                    <div>
+                        <span class="fw-bold text-primary fs-3 purecounter" data-purecounter-start="0"
+                              data-purecounter-end="546">0</span>
+                        <p>لورم ایپسوم متن</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center shadow p-3">
+                    <i class="bi bi-journal-richtext orange me-3"></i>
+                    <div>
+                        <span class="fw-bold text-primary fs-3 purecounter" data-purecounter-start="0"
+                              data-purecounter-end="75">0</span>
+                        <p>لورم ایپسوم متن</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center shadow p-3">
+                    <i class="bi bi-headset green me-3"></i>
+                    <div>
+                        <span class="fw-bold text-primary fs-3 purecounter" data-purecounter-start="0"
+                              data-purecounter-end="630">0</span>
+                        <p>لورم ایپسوم متن</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="d-flex align-items-center justify-content-center shadow p-3">
+                    <i class="bi bi-people red me-3"></i>
+                    <div>
+                        <span class="fw-bold text-primary fs-3 purecounter" data-purecounter-start="0"
+                              data-purecounter-end="1523">0</span>
+                        <p>لورم ایپسوم متن</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/purecounter_vanilla.js"></script>
+<script>
+    new PureCounter();
+</script>
 </body>
 </html>
